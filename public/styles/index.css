@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color:  hsl(228, 33%, 97%);
+}
+
+img {
+    height: 40px;
+}
+
+.avatar-image {
+    margin-right: 1rem;
+}
+
+#comments-container {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.comment-container {
+    /* width: 80%; */
+    margin: 30px auto 0 auto;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+}
+
+.replies-content {
+    width: 100%;
+    /* background-color: white; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.voting-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.3rem 0.7rem ;
+    align-items: center;
+    background-color: hsl(223, 19%, 93%);
+    height: 5rem;
+    width: 2rem;
+    margin: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.comment-score {
+    color: hsl(238, 40%, 52%);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0.5rem 0;
+}
+
+.user-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-data {
+    display: flex;
+    align-items: center;
+}
+
+.comment-data {
+    width: 100%;
+}
+
+.comment-data p {
+    color: hsl(211, 10%, 45%);
+    margin: 0;
+}
+
+.comment-date {
+    margin-left: 0.5rem;
+}
+
+.reply-container {
+    display: flex;
+    align-items: center;
+}
+
+.reply-container p,
+.reply-container svg {
+    margin-left: 0.5rem;
+}
+
+.reply-container svg:hover,
+.reply-container p:hover {
+    cursor: pointer;
+}
+
+.single-reply {
+    width: 90%;
+    /* padding: 10px 20px;
+    background-color: white; */
+    margin-top: 10px;
+    margin-left: 10%;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+}
+
+.vl {
+    height: inherit;
+    border-left: thick solid hsl(228, 100%, 95%);
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+.replies-content-container {
+    display: flex;
+}
+
+#adding-comment-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+}
+
+#adding-comment-container form {
+    width: 90%;
+    text-align: right;
+    margin-left: 10px;
+}
+
+#adding-comment-container textarea {
+    width: 80%;
+    border: solid 1.5px hsl(223, 19%, 93%);
+    border-radius: 5px;
+    height: 80px;
+}
+
+#adding-comment-container button {
+    margin-left: 10px;
+    vertical-align: top;
+    width: 15%;
+    height: 2.5rem;
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#adding-comment-container textarea:focus {
+    outline: none;
+    border: solid 2px hsl(222, 35%, 87%);
+}
+
+.disabled {
+    display: none;
+}
+
+#backdrop {
+    z-index: 100;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#delete-single-post {
+    position: fixed;
+    top: 0;
+    left: calc(50% - 12.5rem);
+    z-index: 1000;
+    margin: 200px auto;
+    width: 25rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#delete-single-post h2 {
+    margin-top: 0;
+}
+
+#delete-single-post form {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#submit-button {
+    width: 45%;
+    height: 2.5rem;
+    background-color: hsl(358, 79%, 66%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    background-color: hsl(357, 100%, 86%);
+}
+
+#reset-button {
+    width: 45%;
+    height: 2.5rem;
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#reset-button:hover {
+    cursor: pointer;
+    background-color: hsl(238, 36%, 57%);
+}
